@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDSO</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .custom-body-image {
+            background-image: url('./images/background.jpg');
+            background-size: cover;
+            width: auto;
+            height: 641px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+        }
+
+        .secton-image {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .custom-background-color {
+            background-color: #0575A7;
+            color: white;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .custom-login-button {
+            background: linear-gradient(to right, #28518A, #2B87A4);
+        }
+
+        /* == left section  image */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 410px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            background-size: contain;
+        }
+        .custom-width-input{
+            margin: 0px auto;
+            margin: 0px 55px;
+        }
+    </style>
+</head>
+
+<body>
+    
+     <section class="custom-body-image">
+
+    <!-- navbar start -->
+    <nav class="container navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Logo"></a>
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">WhyDR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">How to Buy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">FAQ's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- navbar end -->
+
+
+    <!-- second section start  -->
+    <section class="container pt-5">
+        <div class="row">
+            <!-- left side  -->
+            <div class="col-md-6 ">
+                <div class="container d-none d-lg-block">
+                    <div class="col-md-6 px-5 ">
+                        <div class="image-container">
+                            <img src="./images/section-left.png" class=" " alt="property">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right side login input form -->
+            <div class="col-md-6">
+                <div class="container d-flex flex-column align-items-center">
+
+
+                    <div
+                        class="d-flex align-items-center justify-content-center rounded-top-3 p-3 custom-background-color " style="width: 375px">
+                        <div class="text-center text-uppercase fw-bold h2">PLOT / FLAT <br> MANAGEMENT SOFTWARE</div>
+                    </div>
+
+                    <div class="form-custom-color px-3 " style="background-color:#CFEDF7 ; width: 375px">
+                        <form action="" class="custom-width-input">
+                            <div class="mt-3 text-center">
+                                <span for="formGroupExampleInput" class="form-label ">Username or Email</span>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="">
+                            </div>
+                            <div class="mb-3 text-center">
+                                <label for="formGroupExampleInput2" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="">
+                            </div>
+                            <div class="mb-3 d-flex flex-column flex-sm-row justify-content-between gap-2">
+                                <div class="form-check form-check-inline mb-2 mb-sm-0">
+                                    <input type="checkbox" id="rememberCheckbox" class="form-check-input">
+                                    <label for="rememberCheckbox" class="form-check-label">Remember me</label>
+                                </div>
+                                <div>
+                                    <a href="/forget-password">Forgot Password?</a>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-center">
+                                <input type="submit"
+                                    class="px-5 py-2 rakib custom-login-button border-0 rounded h5 text-white"
+                                    id="formGroupExampleInput2" value="Login">
+                            </div>
+                            <div class="mb-3  text-center">
+                                <a href="/signup">Not a member?Sign up Now</a>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional: Bootstrap jQuery and Popper.js (for Bootstrap JavaScript components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+    <!-- Your custom JavaScript for responsive behavior -->
+    <script>
+        // Ensure navbar collapse when a nav link is clicked (for single-page apps)
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
+</body>
+
+</html>
